@@ -1,10 +1,12 @@
 import { Server } from "socket.io"
 
-
 let connections = {}
 let messages = {}
 let timeOnline = {}
 
+//connect to socket
+//so that cors option sa koi be origin connect
+//kar sakta hai.
 export const connectToSocket = (server) => {
     const io = new Server(server, {
         cors: {
@@ -14,7 +16,7 @@ export const connectToSocket = (server) => {
             credentials: true
         }
     });
-
+    
 
     io.on("connection", (socket) => {
 
@@ -28,14 +30,15 @@ export const connectToSocket = (server) => {
             connections[path].push(socket.id)
 
             timeOnline[socket.id] = new Date();
-
-            // connections[path].forEach(elem => {
-            //     io.to(elem)
-            // })
-
+            
             for (let a = 0; a < connections[path].length; a++) {
                 io.to(connections[path][a]).emit("user-joined", socket.id, connections[path])
             }
+        /*agar room ke ander purane message
+        store hai to naye user ko wo message
+        bhej diye jate hai(chat history).
+        
+        */    
 
             if (messages[path] !== undefined) {
                 for (let a = 0; a < messages[path].length; ++a) {
@@ -45,6 +48,8 @@ export const connectToSocket = (server) => {
             }
 
         })
+
+        
 
         socket.on("signal", (toId, message) => {
             io.to(toId).emit("signal", socket.id, message);
