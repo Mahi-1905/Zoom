@@ -1,12 +1,46 @@
 🌟 Project Highlights
 Connectify transforms virtual communication, making it seamless, intuitive, and enjoyable. Whether you're connecting with loved ones or collaborating with colleagues, our platform ensures a smooth, high-quality communication experience.
 
-✨ Key Features
-🚀 Quick Connect: Join meetings with a single click
-👥 Guest Access: No registration required for quick meetings
-🔒 Secure Authentication: Robust user registration and login
-📅 Meeting History: Track and review past connections
-📱 Responsive Design: Perfectly adapts to mobile and desktop
+🚀 Features
+🎥 Real-Time Video Meetings
+
+High-quality video & audio
+
+Secure peer-to-peer connections
+
+Auto-reconnect logic for stable calls
+
+🔐 Secure Authentication
+
+JWT-based login & registration
+
+Protected backend APIs
+
+User-specific meeting history
+
+⚡ Fast & Intuitive UI
+
+One-click meeting creation
+
+Join as guest (no sign-up required)
+
+Responsive design for mobile & desktop
+
+📅 Meeting Management
+
+Track previous meetings
+
+Store meeting details in database
+
+Rejoin or share meeting links
+
+🌐 Real-Time Events
+
+User join/leave notifications
+
+Live participant updates
+
+Smooth meeting room transitions
 🛠 Tech Stack
 | Category                    | Technologies               |
 | --------------------------- | -------------------------- |
@@ -24,8 +58,8 @@ npm (v6 or later)
 MongoDB
 Installation Steps
 Clone the repository
-git clone https://github.com/khyatichahal/connectify.git
-cd connectify
+git clone  https://github.com/Mahi-1905/Zoom
+cd Zoom
 Install Backend Dependencies
 cd backend
 npm install
@@ -42,13 +76,14 @@ npm start
 # In frontend directory
 npm start
 📦 Project Structure
-connectify/
+Zoom/
 │
 ├── backend/
 │   ├── src/
 │   │   ├── controllers/
 │   │   ├── models/
 │   │   └── routes/
+│   ├── config/
 │   └── server.js
 │
 └── frontend/
@@ -57,6 +92,7 @@ connectify/
     │   ├── pages/
     │   └── contexts/
     └── public/
+
 🤝 Contributing
 We welcome contributions! Please follow these steps:
 
