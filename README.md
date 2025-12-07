@@ -1,10 +1,22 @@
-Tech Stack
-Category	Technologies
-Frontend	React.js
-Backend	Node.js, Express.js
-Database	MongoDB
-Real-time Communication	Socket.io
-Authentication	Custom JWT
+🌟 Project Highlights
+Connectify transforms virtual communication, making it seamless, intuitive, and enjoyable. Whether you're connecting with loved ones or collaborating with colleagues, our platform ensures a smooth, high-quality communication experience.
+
+✨ Key Features
+🚀 Quick Connect: Join meetings with a single click
+👥 Guest Access: No registration required for quick meetings
+🔒 Secure Authentication: Robust user registration and login
+📅 Meeting History: Track and review past connections
+📱 Responsive Design: Perfectly adapts to mobile and desktop
+🛠 Tech Stack
+| Category                    | Technologies               |
+| --------------------------- | -------------------------- |
+| **Frontend**                | React.js |
+| **Backend**                 | Node.js, Express.js        |
+| **Database**                | MongoDB, Mongoose          |
+| **Real-time Communication** | Socket.io, WebRTC          |
+| **Authentication**          | Custom JWT Auth            |
+               
+
 🚀 Getting Started
 Prerequisites
 Node.js (v14 or later)
@@ -59,9 +71,4 @@ Protected routes
 Data encryption in transit
 📄 License
 Distributed under the MIT License. See LICENSE for more information.
-
-📞 Contact
-Khyati Chahal - khyati2004chahal@gmail.com
-
-Project Link: https://github.com/khyatichahal/connectify
 
