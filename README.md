@@ -1,81 +1,34 @@
-🌟 Project Highlights
-Connectify transforms virtual communication, making it seamless, intuitive, and enjoyable. Whether you're connecting with loved ones or collaborating with colleagues, our platform ensures a smooth, high-quality communication experience.
+⭐ Connectify – Real-Time Video Communication Platform (Zoom Clone)
 
-🚀 Features
-🎥 Real-Time Video Meetings
+Connectify is a modern full-stack video communication platform built using React, Node.js, Express, MongoDB, WebRTC, and Socket.io. It provides secure real-time meetings, user authentication, meeting history, and a clean responsive UI.
 
-High-quality video & audio
+✨ Features
 
-Secure peer-to-peer connections
+🎥 Real-Time Video Calling using WebRTC + Socket.io
 
-Auto-reconnect logic for stable calls
+🔐 JWT Authentication (Login & Signup)
 
-🔐 Secure Authentication
+🚀 One-Click Meeting Creation
 
-JWT-based login & registration
+👥 Guest Mode – join without an account
 
-Protected backend APIs
+📅 Meeting History stored in MongoDB
 
-User-specific meeting history
+📱 Fully Responsive UI
 
-⚡ Fast & Intuitive UI
+⚡ Fast P2P connection for low-latency calls
 
-One-click meeting creation
-
-Join as guest (no sign-up required)
-
-Responsive design for mobile & desktop
-
-📅 Meeting Management
-
-Track previous meetings
-
-Store meeting details in database
-
-Rejoin or share meeting links
-
-🌐 Real-Time Events
-
-User join/leave notifications
-
-Live participant updates
-
-Smooth meeting room transitions
 🛠 Tech Stack
-| Category                    | Technologies               |
-| --------------------------- | -------------------------- |
-| **Frontend**                | React.js |
-| **Backend**                 | Node.js, Express.js        |
-| **Database**                | MongoDB, Mongoose          |
-| **Real-time Communication** | Socket.io, WebRTC          |
-| **Authentication**          | Custom JWT Auth            |
-               
+| Category      | Technologies               |
+| ------------- | -------------------------- |
+| **Frontend**  | React.js |
+| **Backend**   | Node.js, Express.js        |
+| **Database**  | MongoDB, Mongoose          |
+| **Real-time** | WebRTC, Socket.io          |
+| **Auth**      | JWT                        |
 
-🚀 Getting Started
-Prerequisites
-Node.js (v14 or later)
-npm (v6 or later)
-MongoDB
-Installation Steps
-Clone the repository
-git clone  https://github.com/Mahi-1905/Zoom
-cd Zoom
-Install Backend Dependencies
-cd backend
-npm install
-Install Frontend Dependencies
-cd ../frontend
-npm install
-Set Up Environment Variables
-Create .env files in both backend and frontend directories
-Add necessary configuration (DB connection, secret keys)
-Run the Application
-# In backend directory
-npm start
 
-# In frontend directory
-npm start
-📦 Project Structure
+📁 Project Structure
 Zoom/
 │
 ├── backend/
@@ -93,18 +46,70 @@ Zoom/
     │   └── contexts/
     └── public/
 
+⚙️ Getting Started
+✅ Prerequisites
+
+Node.js (v14+)
+
+npm (v6+)
+
+MongoDB (local or Atlas)
+
+🔧 Installation
+1️⃣ Clone the repository
+git clone https://github.com/Mahi-1905/Zoom.git
+cd Zoom
+
+2️⃣ Backend setup
+cd backend
+npm install
+
+3️⃣ Frontend setup
+cd ../frontend
+npm install
+
+🔑 Environment Variables
+Backend .env
+MONGO_URL=your_mongodb_url
+JWT_SECRET=your_secret_key
+PORT=5000
+
+Frontend .env
+REACT_APP_BACKEND_URL=http://localhost:5000
+
+▶️ Running the Application
+Start Backend
+cd backend
+npm start
+
+Start Frontend
+cd frontend
+npm start
+
 🤝 Contributing
-We welcome contributions! Please follow these steps:
-
 Fork the repository
-Create your feature branch (git checkout -b feature/AmazingFeature)
-Commit your changes (git commit -m 'Add some AmazingFeature')
-Push to the branch (git push origin feature/AmazingFeature)
+git checkout -b feature/AmazingFeature
+git commit -m "Add AmazingFeature"
+git push origin feature/AmazingFeature
 Open a Pull Request
-🛡 Security
-Implemented secure authentication
-Protected routes
-Data encryption in transit
-📄 License
-Distributed under the MIT License. See LICENSE for more information.
 
+🛡 Security
+
+Protected backend routes
+
+JWT authentication
+
+Password hashing
+
+Secure P2P communication
+
+📄 License
+
+Licensed under the MIT License.
+
+📞 Contact
+
+Mahi Tyagi
+📧 tyagimahi716@gmail.com
+
+🔗 GitHub: https://github.com/Mahi-1905
